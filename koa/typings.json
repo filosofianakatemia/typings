@@ -1,5 +1,8 @@
 {
   "name": "koa",
   "main": "index.d.ts",
-  "version": "^2.0.0"
+  "version": "^2.0.0",
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20160830141956"
+  }
 }
