@@ -1,0 +1,5 @@
+{
+  "name": "koa",
+  "main": "index.d.ts",
+  "version": "^2.0.0"
+}
