@@ -5,6 +5,9 @@ declare module "koa" {
 
     namespace Koa {
         export interface Context extends Request, Response {
+            // CUSTOM START
+            body?: any;
+            // CUSTOM END
             app: Koa;
             req: http.IncomingMessage;
             res: http.ServerResponse;
@@ -84,11 +87,16 @@ declare module "koa" {
             toJSON(): any;
             inspect(): any;
 
-            // ADDED HERE BY BODYPARSER
+            // CUSTOM START
             body?: any;
+            // CUSTOM END
         }
 
         export interface Response {
+            // CUSTOM START
+            _body?: any;
+            // CUSTOM END
+
             app: Koa;
             req: http.IncomingMessage;
             res: http.ServerResponse;
